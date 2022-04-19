@@ -25,7 +25,7 @@
     "uilayout": "editor-terminal",
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n",
     "hideHiddenFiles": true,
-    "exclusionPatterns": ["./Dekstop", "./katacoda*", "./linux-amd64/"]
+    "exclusionPatterns": ["./Desktop", "./katacoda*", "./linux-amd64/"]
   },
   "backend": {
     "imageid": "minikube-running"
