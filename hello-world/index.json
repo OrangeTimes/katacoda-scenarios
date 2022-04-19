@@ -21,6 +21,9 @@
       ]
     }
   },
+  "files": [
+    "values.yaml"
+  ],
   "environment": {
     "uilayout": "editor-terminal",
     "showide": true,
