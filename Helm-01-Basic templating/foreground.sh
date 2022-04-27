@@ -1,3 +1,4 @@
 #!/bin/bash
 
-sleep 5; wait.sh
+ls -lh /usr/local/bin/
+wait.sh; sleep 10; wait.sh
