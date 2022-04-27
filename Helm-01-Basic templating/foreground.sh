@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sleep 5; wait.sh
+sleep 10; wait.sh
