@@ -19,7 +19,8 @@
     },
     "assets": {
       "client": [
-        {"file": "chart/**/*.*", "target": "~/"}       
+        {"file": "chart/**/*.*", "target": "~/"},
+        {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
       ]
     }
   },
