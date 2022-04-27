@@ -1,0 +1,34 @@
+{
+  "title": "Helm Templating - Basics",
+  "description": "Your First Scenario",
+  "difficulty": "beginner",
+  "time": "5 minutes",
+  "details": {
+    "steps": [{
+      "title": "Step 1 - Run Command",
+      "text": "step1.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {"file": "chart/*", "target": "~/"}
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal",   
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n",
+    "hideHiddenFiles": true,
+    "uieditorpath": "/root/charts",
+    "exclusionPatterns": ["./Desktop", "./katacoda*", "./linux-amd64"]
+  },
+  "backend": {
+    "imageid": "minikube-running"
+  }
+}

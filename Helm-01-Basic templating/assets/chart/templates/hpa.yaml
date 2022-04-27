@@ -1,0 +1,14 @@
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: {{ .Value.wrongName }}
+  labels:
+    app: workshop
+spec:
+  maxReplicas: {{ .Value.wrongName }}
+  minReplicas: {{ .Value.wrongName }}
+  scaleTargetRef:
+    apiVersion: extensions/v1beta1
+    kind: Deployment
+    name: myhpa
+  targetCPUUtilizationPercentage: 85
