@@ -46,3 +46,20 @@ You can use multiple templating functions at the same time like so:
 
 Since indentation is important in yaml there are also functions that handle this aspect, and prepend whitespace to property after rendering: 
 ```{{ .Values.property1 | indent 2 }}```
+
+Full list of supported functions is available here: https://helm.sh/docs/chart_template_guide/function_list/
+
+
+Ok so let's learn by doing. Fix next issues in current helm chart
+
+**Issue 1: Fix template to reference the application name correctly**
+
+**Issue 2: Fix template to reference limits correctly**
+  
+Hint: if you are stuck look again at the syntax above
+
+You can render template on your own by running next command"
+
+`helm template . ` {{execute}}
+
+
