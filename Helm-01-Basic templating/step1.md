@@ -21,4 +21,4 @@ Please take some time to analyze this file
 Next important file it's the kubernetes template itself located in ./templates folder 
 Please take some time to analyze this file
 
-`./templates/values.yaml`{{open}}
+`templates/hpa.yaml`{{open}}
