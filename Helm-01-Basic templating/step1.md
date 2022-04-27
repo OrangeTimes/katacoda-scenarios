@@ -22,3 +22,27 @@ Next important file it's the kubernetes template itself located in ./templates f
 Please take some time to analyze this file
 
 `templates/hpa.yaml`{{open}}
+
+It has embedded template function. You can spot them since they use ```{{ }}``` notation
+You can use values from values.yaml in the template like so
+```{{ .Values.property1.property2 }}```
+
+values.yaml
+```
+property1:
+    property2: "Hello world"
+```
+
+In the end result helm with output a template with substituted value taken from values.yaml. So ```{{ .Values.property1.property2 }}``` will become  simply
+
+```
+Hello world
+```
+
+You can use utility templating functions by using pipes notation | like so: 
+```{{ .Values.property1 | trim }}```
+You can use multiple templating functions at the same time like so: 
+```{{ .Values.property1 | trim | upper | quote}} ```
+
+Since indentation is important in yaml there are also functions that handle this aspect, and prepend whitespace to property after rendering: 
+```{{ .Values.property1 | indent 2 }}```
