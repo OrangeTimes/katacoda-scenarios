@@ -1,3 +1,2 @@
 #!/bin/bash
-
-sleep 10; wait.sh
+echo "Waiting to complete"; while [ ! -f /opt/.backgroundfinished ] ; do sleep 2; done; echo "Done"
