@@ -52,14 +52,14 @@ Full list of supported functions is available here: https://helm.sh/docs/chart_t
 
 Ok so let's learn by doing. Fix next issues in current helm chart
 
-**Issue 1: Fix template to reference the application name correctly**
+>**Issue 1: Fix template to reference the application name correctly**
 
-**Issue 2: Fix template to reference limits correctly**
+>**Issue 2: Fix template to reference limits correctly**
   
 Hint: if you are stuck look again at the syntax above
 
-You can render template on your own by running next command"
+You can render template on your own by running next command
 
-`helm template . ` {{execute}}
+`helm template ~/chart `{{execute}}
 
 
