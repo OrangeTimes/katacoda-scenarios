@@ -19,7 +19,8 @@
     },
     "assets": {
       "client": [
-        {"file": "chart/**/*.*", "target": "~/"}      
+        {"file": "charts/**/*.*", "target": "~/"},
+        {"file": "tests/**/*.*", "target": "~/.hidden"}
       ]
     }
   },
@@ -27,7 +28,7 @@
     "uilayout": "editor-terminal",   
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n",
     "hideHiddenFiles": true,
-    "uieditorpath": "/root/chart/",
+    "uieditorpath": "/root/charts/",
     "exclusionPatterns": ["./Desktop", "./katacoda*", "./linux-amd64"]
   },
   "backend": {
