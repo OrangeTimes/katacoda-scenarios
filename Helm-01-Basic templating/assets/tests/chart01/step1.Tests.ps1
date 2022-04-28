@@ -1,7 +1,7 @@
 
 
 $currentPath = Split-Path $MyInvocation.MyCommand.Path -Parent
-$chartPath = Join-Path $currentPath "../chart" -Resolve
+$chartPath = Join-Path $currentPath "../chart01" -Resolve
 Write-Host "Chart path: $chartPath"
 Describe 'Testing Helm Rendering' {
     It 'Template rendering should not throw exception' { 
