@@ -6,7 +6,7 @@ Check that Helm installed correctly
 
 Expect to see
 ```shell
-Version:"v3.2.2"
+Version:"v3.8.0"
 ```
 
 # value.yaml

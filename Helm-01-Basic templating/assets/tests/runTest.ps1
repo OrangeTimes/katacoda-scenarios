@@ -4,6 +4,7 @@ param(
     [System.String]$testLocation
 )
 Import-Module Pester -PassThru
+
 $config = [PesterConfiguration]::Default;
 $config.Run.Path = $testLocation;
 $config.Run.EnableExit = $true

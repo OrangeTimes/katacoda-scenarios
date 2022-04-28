@@ -2,7 +2,7 @@
 
 echo "This is a background script with a long running process"
 
-curl -L https://get.helm.sh/helm-v3.2.2-linux-amd64.tar.gz | tar xvz && mv linux-amd64/helm /usr/local/bin/helm
+curl -L https://get.helm.sh/helm-v3.8.0-linux-amd64.tar.gz | tar xvz && mv linux-amd64/helm /usr/local/bin/helm
 
 wget -q https://github.com/PowerShell/PowerShell/releases/download/v7.2.2/powershell-lts_7.2.2-1.deb_amd64.deb
 # Install the downloaded package

@@ -1,10 +1,10 @@
 
-
-$currentPath = Split-Path $MyInvocation.MyCommand.Path -Parent
-$chartPath = Join-Path $currentPath "../chart01" -Resolve
-
-[PesterConfiguration]@{ Run = @{ EnableExit = $True }; Output = @{Verbosity = "None"}}
 Describe 'Testing Helm Rendering' {
+    BeforeAll {
+        $chartPath = Join-Path $PSScriptRoot "../../../charts/chart01" -Resolve
+    }
+    
+    
     It 'Template rendering should not throw exception' { 
         helm template $chartPath 2>&1 | Out-String | Should -Not -Match "Error" -Because 'No rendering error should be in in helm template'
     }
