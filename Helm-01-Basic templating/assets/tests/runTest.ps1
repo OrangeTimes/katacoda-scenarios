@@ -10,4 +10,4 @@ $config.Run.Path = $testLocation;
 $config.Run.Exit = $true
 $config.Output.Verbosity = "None";
 
-return Invoke-Pester -Configuration $config ;
+return Invoke-Pester -Configuration $config;
