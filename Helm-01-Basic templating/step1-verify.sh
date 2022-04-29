@@ -1,1 +1,1 @@
-pwsh -c "Import-Module Pester -PassThru && Invoke-Pester ~/.hidden/tests/chart01 -CI $true" && echo "done"
+pwsh -c "Import-Module Pester -PassThru && Invoke-Pester ~/.hidden/tests/chart01 -CI $true"  2>&1 /tmp/pester.log
