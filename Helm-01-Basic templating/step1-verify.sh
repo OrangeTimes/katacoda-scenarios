@@ -1,2 +1,2 @@
 #!/bin/bash
-echo 'Import-Module Pester -PassThru && Invoke-Pester ~/.hidden/tests/chart01 -CI $true' >> /tmp/hello.txt 2>&1
+pwsh -File ~/.hidden/tests/runTest.ps1 -testLocation '~/.hidden/tests/chart01' >> /tmp/hello.txt 2>&1
