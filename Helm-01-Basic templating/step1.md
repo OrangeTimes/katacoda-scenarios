@@ -65,4 +65,6 @@ You can render template on your own by running next command
 
 `helm template ~/charts/chart01`{{execute}}
 
+`pwsh -c "Import-Module Pester -PassThru && Invoke-Pester ~/.hidden/tests/chart01 -CI $true" && echo "done" `{{execute}}
+
 
