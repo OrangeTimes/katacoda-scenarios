@@ -1,1 +1,1 @@
-echo 'Import-Module Pester -PassThru && Invoke-Pester ~/.hidden/tests/chart01' >> /tmp/hello.txt
+echo "Import-Module Pester -PassThru && Invoke-Pester ~/.hidden/tests/chart01" >> /tmp/hello.txt
