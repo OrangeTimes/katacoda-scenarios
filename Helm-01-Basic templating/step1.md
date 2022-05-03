@@ -59,12 +59,20 @@ Ok so let's learn by doing. Fix next issues in current helm chart
 
 >**Issue 2: Fix template to reference limits correctly**
   
-Hint: if you are stuck look again at the syntax above
+
 
 You can render template on your own by running next command
 
 `helm template ~/charts/chart01`{{execute}}
-
-`pwsh -c "Import-Module Pester -PassThru && Invoke-Pester ~/.hidden/tests/chart01 -CI $true" && echo "done" `{{execute}}
+if validation fails you can view test results:
+`cat /tmp/TestResult.txt`{{execute}}
+<details>
+  <summary>Hint 1</summary>  
+    If you are stuck look again at the syntax and carefully examine the file with embedded helm templates
+</details>
+<details>
+  <summary>Hint 2</summary>  
+    Look at  {{ .Values }} syntax
+</details>
 
 
