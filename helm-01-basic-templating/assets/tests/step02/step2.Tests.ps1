@@ -8,10 +8,10 @@ Describe 'Testing Helm Rendering' {
     }
         
     It 'Template rendering should not throw exception' { 
-        helm template $chartPath 2>&1 | Out-String | Should -Not -Match "Error" -Because 'No rendering error should be in in helm template'
+        $actual | Should -Not -Match "Error" -Because 'No rendering error should be in in helm template'
     }
 
-    It 'Rendered template should contain name workshop' { 
+    It 'Rendered template should contain name workshop from overrides/values.yaml' { 
         
         $actual | Should -Match "name: workshop" 
     }  
@@ -28,7 +28,7 @@ Describe 'Testing Helm Rendering' {
         $overridesValuesYaml | Should -Match "name:\s+?workshop"
     }
 
-    It 'Override values.yaml should contain set max replicas to 2' { 
+    It 'Override values.yaml should set max replicas to 2' { 
         $overridesValuesYaml | Should -Match "max:\s+?2"
     }
 }

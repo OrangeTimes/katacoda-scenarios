@@ -15,13 +15,13 @@ We already have a helm deployment ready
 All the configuration is stored in a special file called values.yaml
 Please take some time to analyze this file
 
-`chart01/values.yaml`{{open}}
+`chart/values.yaml`{{open}}
 # Templates folder
 
 Next important file it's the kubernetes template itself located in ./templates folder 
 Please take some time to analyze this file
 
-`chart01/templates/hpa.yaml`{{open}}
+`chart/templates/hpa.yaml`{{open}}
 
 # Templating engine
 It has embedded template function. You can spot them since they use ```{{ }}``` notation
@@ -53,7 +53,7 @@ Full list of supported functions is available here: https://helm.sh/docs/chart_t
 
 # Practical task
 
-Ok so let's learn by doing. Fix next issues in current helm chart
+Ok so let's learn by doing. Fix next issues in chart01 helm chart
 
 >**Issue 1: Fix template to reference the application name correctly**
 
@@ -63,7 +63,7 @@ Ok so let's learn by doing. Fix next issues in current helm chart
 
 You can render template on your own by running next command
 
-`helm template ~/charts/chart01`{{execute}}
+`helm template ~/chart`{{execute}}
 
 if validation fails you can view test results:
 

@@ -1,4 +1,0 @@
-name: myhpa
-limits:
-  max: 10
-  min: 1

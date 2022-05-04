@@ -30,13 +30,19 @@ Most often we will use -f flag during running some of the helm commands
 
 Ok so let's learn by doing. Do next tasks in current helm chart
 
->**Task 1: Update the values.yaml located in ./override folder to change application name to workshop**
+>**Task 1: Create new values.yaml file inside in ~/chart/overrides folder**
 
->**Task 2: Update the values.yaml located in ./override folder so max replicas should be set 2 in the end result**
+>**Task 2: Update the values.yaml located in ./overrides folder to change application name to workshop**
+
+>**Task 3: Update the values.yaml located in ./overrides folder so max replicas should be set 2 in the end result**
   
+You can create create new values.yaml by running next commands 
+
+`mkdir ~/chart/overrides && touch ~/chart/overrides/values.yaml `{{execute}}
+>you may need to refresh the editor after this
 
 
-You can render template on your own by running next command
+Render template on your own by running next command
 
 `helm template ~/charts/chart02 -f ~/charts/chart02/overrides/values.yaml `{{execute}}
 
