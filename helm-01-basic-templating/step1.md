@@ -1,4 +1,4 @@
-# Check helm
+# Check helm version
 
 Check that Helm installed correctly
 
@@ -9,21 +9,21 @@ Expect to see
 Version:"v3.8.0"
 ```
 
-# value.yaml
+# values.yaml file
 
 We already have a helm deployment ready
 All the configuration is stored in a special file called values.yaml
 Please take some time to analyze this file
 
 `chart01/values.yaml`{{open}}
-# templates folder
+# Templates folder
 
 Next important file it's the kubernetes template itself located in ./templates folder 
 Please take some time to analyze this file
 
 `chart01/templates/hpa.yaml`{{open}}
 
-# templating engine
+# Templating engine
 It has embedded template function. You can spot them since they use ```{{ }}``` notation
 You can use values from values.yaml in the template like so
 ```{{ .Values.property1.property2 }}```
@@ -39,7 +39,7 @@ In the end result helm with output a template with substituted value taken from 
 ```
 Hello world
 ```
-# utility templating functions
+# Utility templating functions
 
 You can use utility templating functions by using pipes notation | like so: 
 ```{{ .Values.property1 | trim }}```
@@ -51,7 +51,7 @@ Since indentation is important in yaml there are also functions that handle this
 
 Full list of supported functions is available here: https://helm.sh/docs/chart_template_guide/function_list/
 
-# task
+# Practical task
 
 Ok so let's learn by doing. Fix next issues in current helm chart
 
