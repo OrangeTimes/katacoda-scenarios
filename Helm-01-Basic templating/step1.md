@@ -64,12 +64,16 @@ Ok so let's learn by doing. Fix next issues in current helm chart
 You can render template on your own by running next command
 
 `helm template ~/charts/chart01`{{execute}}
+
 if validation fails you can view test results:
+
 `cat /tmp/TestResult.txt`{{execute}}
+
 <details>
   <summary>Hint 1</summary>  
     If you are stuck look again at the syntax and carefully examine the file with embedded helm templates
 </details>
+
 <details>
   <summary>Hint 2</summary>  
     Look at  {{ .Values }} syntax
