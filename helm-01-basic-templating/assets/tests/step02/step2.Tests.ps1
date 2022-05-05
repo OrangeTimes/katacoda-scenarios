@@ -2,7 +2,7 @@
 Describe 'Testing Helm Rendering' {
     BeforeAll {
         $isLocalExecution = Test-Path (Join-Path $PSScriptRoot -ChildPath "../../../assets" -Resolve -ErrorAction SilentlyContinue) 
-        $chartPath = $isLocalExecution ? (Join-Path $PSScriptRoot -ChildPath "../../../assets/charts/chart02" -Resolve) : (Join-Path $PSScriptRoot -ChildPath "../../../charts/chart02" -Resolve)
+        $chartPath = $isLocalExecution ? (Join-Path $PSScriptRoot -ChildPath "../../../assets/chart" -Resolve) : (Join-Path $PSScriptRoot -ChildPath "../../../chart" -Resolve)
         $actual = helm template $chartPath -f $chartPath/overrides/values.yaml 2>&1 | Out-String
         $overridesValuesYaml = Get-Content "$chartPath/overrides/values.yaml" -Raw
     }

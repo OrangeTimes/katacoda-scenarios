@@ -12,20 +12,6 @@ Helm provides multiple level of specificity in order to give ability to user to 
 The list above is in order of specificity: values.yaml is the default, which can be overridden by a parent chart's values.yaml, which can in turn be overridden by a user-supplied values file, which can in turn be overridden by --set parameters.
 Most often we will use -f flag during running some of the helm commands
 
-
-     Ok so let's learn by doing  
-     You should override the application name and max number of replicas using helm override capability
-      Objective: 
-      1. Update the values.yaml located in ./override folder to change application name to workshop 
-      2. Update the values.yaml located in ./override folder so max replicas should be set 2 in the end result
-     You can render template on your own by running next command
-    Write-Host
-    Write-Host helm template `$currentPath` -f `$overrideValuesYamlLocation` -ForegroundColor Green
-    Write-Host    
-     Fix all the issues and pass the test. Good luck
-      Test will check your template against expected result.
-    Start-Sleep -Seconds $speedInSeconds
-
 # Practical task
 
 Ok so let's learn by doing. Do next tasks in current helm chart
@@ -44,7 +30,7 @@ You can create create new values.yaml by running next commands
 
 Render template on your own by running next command
 
-`helm template ~/charts/chart02 -f ~/charts/chart02/overrides/values.yaml `{{execute}}
+`helm template ~/chart -f ~/chart/overrides/values.yaml `{{execute}}
 
 if validation fails you can view test results:
 
