@@ -20,8 +20,8 @@ $result | Out-String |  Out-File -FilePath $logFile ;
 $result.Tests | ForEach-Object { "$_" } | Join-String -Separator "$([Environment]::NewLine)" | Out-File -FilePath $tempFile;
 if ($result.Result -ne "Passed")
 {
-    Write-Host "Test Failed" | Out-File -FilePath $resultFile;
+   "Test Failed" | Out-File -FilePath $resultFile;
     exit 1
 }
-Write-Host "Test Passed" | Out-File -FilePath $resultFile;
+"Test Passed" | Out-File -FilePath $resultFile;
 exit 0
