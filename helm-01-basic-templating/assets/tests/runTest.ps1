@@ -17,4 +17,3 @@ $logFile = [System.IO.Path]::Combine($tempFolder, "Log.txt");
 Write-Host "Result will be written to: $tempFile "
 $result | Out-String |  Out-File -FilePath $logFile ;
 $result.Tests | ForEach-Object { "$_" } | Join-String -Separator "$([Environment]::NewLine)" | Out-File -FilePath $tempFile;
-exit $result.Failed.Count;
