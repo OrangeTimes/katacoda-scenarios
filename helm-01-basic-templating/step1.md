@@ -15,13 +15,13 @@ We already have a helm deployment ready
 All the configuration is stored in a special file called values.yaml
 Please take some time to analyze this file
 
-`chart/values.yaml`{{open}}
+`values.yaml`{{open}}
 # Templates folder
 
 Next important file it's the kubernetes template itself located in ./templates folder 
 Please take some time to analyze this file
 
-`chart/templates/hpa.yaml`{{open}}
+`templates/hpa.yaml`{{open}}
 
 # Templating engine
 It has embedded template function. You can spot them since they use ```{{ }}``` notation
