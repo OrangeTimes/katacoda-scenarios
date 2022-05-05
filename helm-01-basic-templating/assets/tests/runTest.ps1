@@ -21,7 +21,7 @@ $result.Tests | ForEach-Object { "$_" } | Join-String -Separator "$([Environment
 if ($result.Result -ne "Passed")
 {
    "Test Failed" | Out-File -FilePath $resultFile;
-    exit 1
+    throw "Test Failed";
 }
 "Test Passed" | Out-File -FilePath $resultFile;
 exit 0
