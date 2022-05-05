@@ -4,6 +4,7 @@ if [ $? -eq 0 ]
 then 
   echo "exit 0" >> /tmp/result.txt
   echo "done"
+  exit 0
 else 
   echo "exit 1" >> /tmp/result.txt
   exit 1
