@@ -1,7 +1,7 @@
 #!/bin/bash
-pwsh -File ~/.hidden/tests/runTest.ps1 -testLocation '~/.hidden/tests/step01'
-OUTPUT=$?
-echo "${OUTPUT}" >> /tmp/result.txt 2>&1
+# pwsh -File ~/.hidden/tests/runTest.ps1 -testLocation '~/.hidden/tests/step01'
+# OUTPUT=$?
+# echo "${OUTPUT}" >> /tmp/result.txt 2>&1
 # if [ $? -eq 0 ] 
 # then 
 #   echo "exit 0" >> /tmp/result.txt
