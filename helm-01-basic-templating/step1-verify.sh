@@ -12,6 +12,7 @@ echo "${OUTPUT}" >> /tmp/result.txt 2>&1
 #   exit 1
 # fi
 echo "done"
+exit 0
 
 # If the user can proceed the script should output "done" with exit code 0.
 # to debug the test, use: <command to debug> >> /tmp/result.txt 2>&1
