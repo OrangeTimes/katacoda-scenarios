@@ -1,19 +1,6 @@
 #!/bin/bash
 pwsh -File ~/.hidden/tests/runTest.ps1 -testLocation '~/.hidden/tests/step01' && echo "done"
-
-# echo $? >> /tmp/result.txt 2>&1
-# OUTPUT=$?
-# echo "${OUTPUT}" >> /tmp/result.txt 2>&1
-# if [ $? -eq 0 ] 
-# then 
-#   echo "exit 0" >> /tmp/result.txt
-#   echo "done"
-#   exit 0
-# else 
-#   echo "exit 1" >> /tmp/result.txt
-#   exit 1
-# fi
-# echo "done"
-
 # If the user can proceed the script should output "done" with exit code 0.
-# to debug the test, use: <command to debug> >> /tmp/result.txt 2>&1
+# To debug the test, use: <command to debug> >> /tmp/result.txt 2>&1
+# The command should not throw any errors during it's execution. 
+# Even if you return exit 0 but internally it throws an exception the step will fail!!!
