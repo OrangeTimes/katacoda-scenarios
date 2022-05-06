@@ -25,10 +25,10 @@ Describe 'Testing Helm Rendering' {
     } 
 
     It 'Override values.yaml should set name  to workshop' { 
-        $overridesValuesYaml | Should -Match "name:\s+?workshop"
+        $overridesValuesYaml | Should -Match "name:\s*workshop"
     }
 
     It 'Override values.yaml should set max replicas to 2' { 
-        $overridesValuesYaml | Should -Match "max:\s+?2"
+        $overridesValuesYaml | Should -Match "max:\s*2"
     }
 }

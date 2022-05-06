@@ -49,9 +49,9 @@ Note: Child chart cannot read favorite section (in the example above) if it was 
 
 Ok so let's learn by doing. Do next tasks in current helm chart
 
->**Task 1: Add global section to .values yaml with value domain set to "justanswer.local"**
+>**Task 1: Add global section to .values yaml with property domain set to "justanswer.local"**
 
->**Task 2: Add new property 'url' to .values yaml with value domain set to "{{ .Values.name }}{{.Values.global.domain }}"**
+>**Task 2: Add new property 'url' to values.yaml with value set to "{{ .Values.name }}.{{.Values.global.domain }}"**
 
 >**Task 3: Update the hpa.yaml and add new property named url inside the label property. Value of newly added property should function to support rendering of composite url property in values.yaml using tpl function**
 
