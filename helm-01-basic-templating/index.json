@@ -12,6 +12,9 @@
       "title": "Step 2 - Working with overrides",
       "text": "step2.md",
       "verify": "step2-verify.sh"
+    },{
+      "title": "Step 4 - Working with tpl function",
+      "text": "step4.md"
     }  
   ],
     "intro": {

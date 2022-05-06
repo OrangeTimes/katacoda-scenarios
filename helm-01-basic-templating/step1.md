@@ -53,7 +53,7 @@ Full list of supported functions is available here: https://helm.sh/docs/chart_t
 
 # Practical task
 
-Ok so let's learn by doing. Fix next issues in chart01 helm chart
+Ok so let's learn by doing. Fix next issues in current helm chart
 
 >**Issue 1: Fix template to reference the application name correctly**
 
