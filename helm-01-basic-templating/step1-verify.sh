@@ -1,5 +1,6 @@
 #!/bin/bash
-pwsh -File ~/.hidden/tests/runTest.ps1 -testLocation '~/.hidden/tests/step01' && echo "done"
+# pwsh -File ~/.hidden/tests/runTest.ps1 -testLocation '~/.hidden/tests/step01' && echo "done"
+pwsh -c "ls" && echo "done" 
 # echo $? >> /tmp/result.txt 2>&1
 # OUTPUT=$?
 # echo "${OUTPUT}" >> /tmp/result.txt 2>&1
