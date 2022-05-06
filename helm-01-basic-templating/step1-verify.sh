@@ -1,5 +1,5 @@
 #!/bin/bash
-# OUTPUT=$(pwsh -File ~/.hidden/tests/runTest.ps1 -testLocation '~/.hidden/tests/step01')
+pwsh -File ~/.hidden/tests/runTest.ps1 -testLocation '~/.hidden/tests/step01' && echo "done"
 # echo $? >> /tmp/result.txt 2>&1
 # OUTPUT=$?
 # echo "${OUTPUT}" >> /tmp/result.txt 2>&1
@@ -12,7 +12,7 @@
 #   echo "exit 1" >> /tmp/result.txt
 #   exit 1
 # fi
-echo "done"
+# echo "done"
 
 # If the user can proceed the script should output "done" with exit code 0.
 # to debug the test, use: <command to debug> >> /tmp/result.txt 2>&1
