@@ -19,8 +19,8 @@ Describe 'Testing Helm Rendering' {
 
     It 'Template rendering should render empty template if enabled property is set to false' { 
         $actualWithDisabled | Should -Not -Match "name: workshop" 
-        $actualWithEnabled | Should -Not -Match "minReplicas: 1"
-        $actualWithEnabled | Should -Not -Match "maxReplicas: 2"
+        $actualWithDisabled | Should -Not -Match "minReplicas: 1"
+        $actualWithDisabled | Should -Not -Match "maxReplicas: 2"
     }  
     
     It 'Rendered template should contain name workshop from overrides/values.yaml if enabled property is set to true' { 
