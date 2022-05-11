@@ -20,7 +20,11 @@
       "title": "Step 4 - Working with tpl function",
       "text": "step4.md",
       "verify": "step4-verify.sh"
-    }  
+    },{
+      "title": "Step 5 - Working with range operator",
+      "text": "step5.md",
+      "verify": "step5-verify.sh"
+    }    
   ],
     "intro": {
       "text": "intro.md",
