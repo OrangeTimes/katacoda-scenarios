@@ -29,7 +29,7 @@ Jenkins
 {{ end }}
 ```
 
-# Then value is considered false 
+# When value is considered false 
 
 A expression inside if helm template block  is evaluated as false if the value is:
 1) a boolean false
