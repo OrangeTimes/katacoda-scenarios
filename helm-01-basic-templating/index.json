@@ -36,7 +36,7 @@
       "text": "finish.md"
     },
     "assets": {
-      "client": [
+      "host01": [
         {"file": "chart/**/*.*", "target": "~/"},
         {"file": "tests/**/*.*", "target": "~/.hidden"}
       ]
