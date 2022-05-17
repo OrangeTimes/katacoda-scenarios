@@ -37,8 +37,8 @@
     },
     "assets": {
       "host01": [
-        {"file": "chart/", "target": "~/"},
-        {"file": "tests/", "target": "~/.hidden"}
+        {"file": "chart/*", "target": "~/"},
+        {"file": "tests/*", "target": "~/.hidden"}
       ]
     }
   },
