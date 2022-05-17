@@ -38,12 +38,6 @@ if validation fails you can view test results:
 
 <details>
   <summary>Hint 1</summary>  
-    If you are stuck look again at the syntax and carefully examine the file with embedded helm templates
+    You can just copy the needed properties from values.yaml and put inside the values.yaml in /overrides/ folder.
 </details>
-
-<details>
-  <summary>Hint 2</summary>  
-    Look at  {{ .Values }} syntax
-</details>
-
 

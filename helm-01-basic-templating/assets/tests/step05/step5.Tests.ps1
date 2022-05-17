@@ -24,7 +24,7 @@ Describe 'Testing Helm Rendering' {
         $actual | Should -Match "host4.example.com"
         $actual | Should -Match "host5.example.com"
     }   
-    It 'hpa.yaml should use have hosts property' {
+    It 'hpa.yaml should have hosts property inside' {
         $hpaYaml | Should -Match "hosts" 
     }
 
@@ -32,7 +32,7 @@ Describe 'Testing Helm Rendering' {
         $hpaYaml | Should -Match "range" 
     }
 
-    It 'hpa.yaml should use reference .Values.host' {
+    It 'hpa.yaml should use reference .Values.hosts' {
         $hpaYaml | Should -Match ".Values.hosts" 
     }
 }

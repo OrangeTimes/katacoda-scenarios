@@ -67,6 +67,17 @@ data:
 
 >**Task 4 (Optional): Use the quote function to wrap each of the url in quotes**
 
+End result should look like this
+```
+data:
+  hosts:
+   - "host1.example.com"
+   - "host2.example.com"
+   - "host3.example.com"
+   - "host4.example.com"
+   - "host5.example.com"
+```
+
 
 Render template on your own by running next command
 
@@ -78,10 +89,10 @@ if validation fails you can view test results:
 
 <details>
   <summary>Hint 1</summary>  
-    If you are stuck look again at the syntax and carefully examine the file with embedded helm templates
+    You need to add - before {{ . }} expression
 </details>
 
 <details>
   <summary>Hint 2</summary>  
-    Look at  {{ .Values }} syntax
+   Use the | quote notation inside {{}} to render host in quotation marks
 </details>

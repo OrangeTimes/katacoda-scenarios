@@ -76,7 +76,7 @@ if validation fails you can view test results:
 
 <details>
   <summary>Hint 2</summary>  
-    Look at  {{ .Values }} syntax
+    Look at {{ .Values }} syntax
 </details>
 
 

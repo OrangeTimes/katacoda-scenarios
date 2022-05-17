@@ -65,12 +65,6 @@ if validation fails you can view test results:
 
 <details>
   <summary>Hint 1</summary>  
-    If you are stuck look again at the syntax and carefully examine the file with embedded helm templates
+  You need to wrap the whole hpa. yaml template in if block. So
+  the {{ end }} should be in the bottom of the template
 </details>
-
-<details>
-  <summary>Hint 2</summary>  
-    Look at {{ .Values }} syntax
-</details>
-
-
