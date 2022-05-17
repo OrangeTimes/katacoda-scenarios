@@ -50,6 +50,6 @@
     "exclusionPatterns": ["./Desktop", "./katacoda*", "./linux-amd64"]
   },
   "backend": {
-    "imageid": "minikube-running"
+    "imageid": "ubuntu"
   }
 }
